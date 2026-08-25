@@ -1,0 +1,12 @@
+{
+  "name": "pieswitch-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pieswitch static portfolio website",
+  "scripts": {
+    "start": "serve -s . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
