@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f6fd"/>
+      <stop offset="100%" stop-color="#efe9fb"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1b69"/>
+      <stop offset="100%" stop-color="#6d4fe0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#8a72f0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8a72f0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g stroke="#6d4fe0" stroke-opacity="0.4" stroke-width="1.5">
+    <path d="M860 120 L980 220"/>
+    <path d="M980 220 L1080 160"/>
+    <path d="M980 220 L960 340"/>
+    <path d="M960 340 L1080 400"/>
+  </g>
+  <circle cx="860" cy="120" r="8" fill="#6d4fe0"/>
+  <circle cx="980" cy="220" r="12" fill="#ffffff" stroke="#2d1b69" stroke-width="2"/>
+  <circle cx="1080" cy="160" r="7" fill="#2d1b69"/>
+  <circle cx="960" cy="340" r="9" fill="#6d4fe0"/>
+  <circle cx="1080" cy="400" r="7" fill="#2d1b69"/>
+
+  <rect x="96" y="96" width="56" height="56" rx="14" fill="url(#accent)"/>
+  <path d="M125.46 134.65 A13 13 0 1 1 130.56 127.36" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="132.3" cy="134" r="3.6" fill="#ffffff"/>
+
+  <text x="96" y="280" font-family="-apple-system, Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" fill="#1e1147">Pieswitch</text>
+  <text x="96" y="340" font-family="-apple-system, Segoe UI, Arial, sans-serif" font-size="30" fill="#5c5674">Building Technology That Moves Businesses Forward.</text>
+
+  <text x="96" y="540" font-family="-apple-system, Segoe UI, Arial, sans-serif" font-size="22" fill="#8b85a3">pieswitch.com</text>
+</svg>

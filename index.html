@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pieswitch | Building Technology That Moves Businesses Forward</title>
+<meta name="description" content="Pieswitch builds scalable software, digital platforms, APIs and cloud-native technology solutions for modern businesses.">
+<meta name="keywords" content="Pieswitch, software engineering, cloud-native, API development, digital platforms, technology consulting, system integration, automation">
+<meta name="author" content="Pieswitch">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pieswitch.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pieswitch">
+<meta property="og:title" content="Pieswitch | Building Technology That Moves Businesses Forward">
+<meta property="og:description" content="Pieswitch builds scalable software, digital platforms, APIs and cloud-native technology solutions for modern businesses.">
+<meta property="og:url" content="https://pieswitch.com/">
+<meta property="og:image" content="https://pieswitch.com/assets/images/og-image.svg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pieswitch | Building Technology That Moves Businesses Forward">
+<meta name="twitter:description" content="Pieswitch builds scalable software, digital platforms, APIs and cloud-native technology solutions for modern businesses.">
+<meta name="twitter:image" content="https://pieswitch.com/assets/images/og-image.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="alternate icon" href="assets/icons/favicon.svg">
+<link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pieswitch",
+  "url": "https://pieswitch.com/",
+  "logo": "https://pieswitch.com/assets/icons/favicon.svg",
+  "description": "Pieswitch builds scalable software, digital platforms, APIs and cloud-native technology solutions for modern businesses."
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ Icon sprite (inline, no external icon library) ============ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="icon-switch" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.59 18.55 A8 8 0 1 1 19.73 14.07" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="21" cy="18.3" r="1.7" fill="currentColor"/></symbol>
+  <symbol id="icon-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M12 4v16M12 4 6 9M12 4l6 5M4 9l2-5 2 5M20 9l-2-5-2 5"/></symbol>
+  <symbol id="icon-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16 8.5 4.5 4.5 0 0 1 17 18H7Z"/></symbol>
+  <symbol id="icon-api" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="6" height="6" rx="1"/><rect x="15" y="9" width="6" height="6" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.2 7.7 8 9 4.8-1.3 8-4.5 8-9V6l-8-3Z"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 3 21 8 12 13 3 8 12 3"/><polyline points="3 13 12 18 21 13"/><polyline points="3 17.5 12 22.5 21 17.5"/></symbol>
+  <symbol id="icon-automation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.5-2-3.4-2.3.9a7.6 7.6 0 0 0-2.6-1.5L14 2h-4l-.5 2a7.6 7.6 0 0 0-2.6 1.6l-2.3-.9-2 3.4L4.6 10a7.6 7.6 0 0 0 0 3l-2 1.6 2 3.4 2.3-.9c.75.68 1.63 1.22 2.6 1.6l.5 2h4l.5-2a7.6 7.6 0 0 0 2.6-1.6l2.3.9 2-3.4-2-1.6Z"/></symbol>
+  <symbol id="icon-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="15 9 13 13 9 15 11 11 15 9"/></symbol>
+  <symbol id="icon-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.2"/><rect x="3" y="14" width="18" height="6" rx="1.2"/><line x1="7" y1="7" x2="7" y2="7"/><line x1="7" y1="17" x2="7" y2="17"/></symbol>
+  <symbol id="icon-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5V18c0 1.66 3.58 3 8 3s8-1.34 8-3V5.5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></symbol>
+  <symbol id="icon-browser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="1.5"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="6.5" y1="6.7" x2="6.5" y2="6.7"/></symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></symbol>
+  <symbol id="icon-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><line x1="12" y1="15" x2="15.5" y2="10.5"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></symbol>
+  <symbol id="icon-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5a1.5 1.5 0 0 1 2 0l1.5 1.5a1.5 1.5 0 0 1 0 2L8.5 19 4 20Z"/></symbol>
+  <symbol id="icon-hammer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l4 4M3 21l7-7M12 12l3-3 5 5-3 3-5-5ZM15 6l3-3 3 3-3 3Z"/></symbol>
+  <symbol id="icon-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-3 2-3-2c-1-1-2-3-2-5 0-4 2-8 5-10Z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 17l-2 4M15 17l2 4"/></symbol>
+  <symbol id="icon-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="15 6 21 6 21 12"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><polyline points="3 6 12 13 21 6"/></symbol>
+  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c2.5 2.5 4 5.7 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.7-4-9s1.5-6.5 4-9Z"/></symbol>
+</svg>
+
+<!-- ============ Navigation ============ -->
+<header class="nav" id="siteNav">
+  <div class="container nav__inner">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-mark"><svg><use href="#icon-switch"/></svg></span>
+      Pieswitch
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#products">Products</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn-secondary">Let's Work Together</a>
+      <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMobile" aria-label="Toggle navigation menu">
+        <svg class="icon-menu"><use href="#icon-menu"/></svg>
+        <svg class="icon-close"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav__mobile glass-panel" id="navMobile" aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#products">Products</a>
+    <a href="#technology">Technology</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="home">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1>Building Technology That <span class="grad">Moves Businesses</span> Forward.</h1>
+        <p>Pieswitch builds scalable software, digital platforms, APIs and cloud-native solutions that help businesses move faster, operate smarter and deliver better digital experiences.</p>
+        <div class="hero__actions">
+          <a href="#solutions" class="btn btn-primary">Explore Our Solutions <svg><use href="#icon-arrow-right"/></svg></a>
+          <a href="#contact" class="btn btn-secondary">Talk to Us</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" role="img" aria-label="Abstract illustration of connected cloud services, APIs and distributed systems">
+        <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="hero-layer hero-layer--3" opacity="0.5">
+            <rect x="60" y="60" width="360" height="360" rx="40" stroke="#2d1b69" stroke-opacity="0.10"/>
+          </g>
+          <g class="hero-layer hero-layer--2" opacity="0.6">
+            <rect x="100" y="100" width="280" height="280" rx="32" stroke="#2d1b69" stroke-opacity="0.14"/>
+          </g>
+          <g class="hero-layer" opacity="0.7">
+            <rect x="140" y="140" width="200" height="200" rx="24" stroke="#2d1b69" stroke-opacity="0.20"/>
+          </g>
+
+          <g stroke="#6d4fe0" stroke-opacity="0.5" stroke-width="1.4">
+            <path class="hero-link" d="M240 90 L120 190"/>
+            <path class="hero-link" d="M240 90 L360 190"/>
+            <path class="hero-link" d="M120 190 L150 320"/>
+            <path class="hero-link" d="M360 190 L330 320"/>
+            <path class="hero-link" d="M150 320 L330 320"/>
+            <path class="hero-link" d="M240 90 L240 220"/>
+            <path class="hero-link" d="M240 220 L150 320"/>
+            <path class="hero-link" d="M240 220 L330 320"/>
+            <path class="hero-link" d="M120 190 L360 190"/>
+          </g>
+
+          <g class="hero-node hero-node--a"><circle cx="240" cy="90" r="16" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.6"/><use href="#icon-cloud" x="230" y="80" width="20" height="20" color="#6d4fe0"/></g>
+          <g class="hero-node hero-node--b"><circle cx="120" cy="190" r="13" fill="#ffffff" stroke="#2d1b69" stroke-width="1.6"/><use href="#icon-api" x="112" y="182" width="16" height="16" color="#2d1b69"/></g>
+          <g class="hero-node hero-node--c"><circle cx="360" cy="190" r="13" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.6"/><use href="#icon-server" x="352" y="182" width="16" height="16" color="#6d4fe0"/></g>
+          <g class="hero-node hero-node--d"><circle cx="240" cy="220" r="18" fill="#ffffff" stroke="#2d1b69" stroke-width="1.8"/><use href="#icon-layers" x="229" y="209" width="22" height="22" color="#2d1b69"/></g>
+          <g class="hero-node hero-node--e"><circle cx="150" cy="320" r="12" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.5"/></g>
+          <g class="hero-node hero-node--f"><circle cx="330" cy="320" r="12" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.5"/></g>
+          <g class="hero-node hero-node--g"><circle cx="90" cy="260" r="7" fill="#6d4fe0"/></g>
+          <g class="hero-node hero-node--h"><circle cx="390" cy="260" r="7" fill="#2d1b69"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Trust strip ============ -->
+  <section class="trust">
+    <div class="container trust__grid reveal-group">
+      <div class="trust__item reveal">
+        <span class="trust__icon"><svg><use href="#icon-scale"/></svg></span>
+        <h3>Built for Scale</h3>
+        <p>Scalable architecture designed for growing businesses.</p>
+      </div>
+      <div class="trust__item reveal">
+        <span class="trust__icon"><svg><use href="#icon-cloud"/></svg></span>
+        <h3>Cloud Native</h3>
+        <p>Modern infrastructure designed for agility and resilience.</p>
+      </div>
+      <div class="trust__item reveal">
+        <span class="trust__icon"><svg><use href="#icon-api"/></svg></span>
+        <h3>API First</h3>
+        <p>Connected systems that integrate seamlessly.</p>
+      </div>
+      <div class="trust__item reveal">
+        <span class="trust__icon"><svg><use href="#icon-shield"/></svg></span>
+        <h3>Engineering Excellence</h3>
+        <p>Reliable, maintainable and secure software.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__copy reveal">
+          <span class="eyebrow">About Pieswitch</span>
+          <h2>Technology Built Around Your Business.</h2>
+          <p>Pieswitch focuses on solving real business problems through technology — not simply building software for its own sake. Every engagement starts with the outcome a business needs, and works backward to the architecture, platform and code that get it there.</p>
+          <p>Our work spans software engineering, digital transformation, cloud-native architecture, API development, system integration, automation, scalable platforms and technology consulting — applied wherever they create the most value for the business.</p>
+          <div class="about__tags">
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Digital Transformation</span>
+            <span class="tag">Cloud-Native Architecture</span>
+            <span class="tag">API Development</span>
+            <span class="tag">System Integration</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Scalable Platforms</span>
+            <span class="tag">Technology Consulting</span>
+          </div>
+        </div>
+
+        <div class="about__visual reveal" role="img" aria-label="Diagram of a modern distributed system with connected services">
+          <svg viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="380" height="320" rx="20" stroke="#d7cbef" stroke-width="1.4"/>
+            <g stroke="#6d4fe0" stroke-opacity="0.45" stroke-width="1.2">
+              <path class="about-pulse" d="M110 90 L210 90"/>
+              <path class="about-pulse" d="M210 90 L310 90"/>
+              <path class="about-pulse" d="M110 90 L110 190"/>
+              <path class="about-pulse" d="M210 90 L210 190"/>
+              <path class="about-pulse" d="M310 90 L310 190"/>
+              <path class="about-pulse" d="M110 190 L210 190"/>
+              <path class="about-pulse" d="M210 190 L310 190"/>
+              <path class="about-pulse" d="M160 190 L160 270"/>
+              <path class="about-pulse" d="M260 190 L260 270"/>
+            </g>
+            <g class="about-node">
+              <rect x="80" y="66" width="60" height="48" rx="10" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.4"/>
+              <use href="#icon-globe" x="94" y="78" width="26" height="26" color="#6d4fe0"/>
+            </g>
+            <g class="about-node" style="animation-delay:-2s">
+              <rect x="180" y="66" width="60" height="48" rx="10" fill="#ffffff" stroke="#2d1b69" stroke-width="1.4"/>
+              <use href="#icon-api" x="194" y="78" width="26" height="26" color="#2d1b69"/>
+            </g>
+            <g class="about-node" style="animation-delay:-4s">
+              <rect x="280" y="66" width="60" height="48" rx="10" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.4"/>
+              <use href="#icon-shield" x="294" y="78" width="26" height="26" color="#6d4fe0"/>
+            </g>
+            <g class="about-node" style="animation-delay:-1s">
+              <rect x="80" y="166" width="60" height="48" rx="10" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.4"/>
+              <use href="#icon-server" x="94" y="178" width="26" height="26" color="#6d4fe0"/>
+            </g>
+            <g class="about-node" style="animation-delay:-3s">
+              <rect x="180" y="166" width="60" height="48" rx="10" fill="#ffffff" stroke="#2d1b69" stroke-width="1.6"/>
+              <use href="#icon-layers" x="194" y="178" width="26" height="26" color="#2d1b69"/>
+            </g>
+            <g class="about-node" style="animation-delay:-5s">
+              <rect x="280" y="166" width="60" height="48" rx="10" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.4"/>
+              <use href="#icon-database" x="294" y="178" width="26" height="26" color="#6d4fe0"/>
+            </g>
+            <g class="about-node" style="animation-delay:-2.5s">
+              <rect x="130" y="266" width="60" height="48" rx="10" fill="#ffffff" stroke="#6d4fe0" stroke-width="1.4"/>
+              <use href="#icon-cloud" x="144" y="278" width="26" height="26" color="#6d4fe0"/>
+            </g>
+            <g class="about-node" style="animation-delay:-1.5s">
+              <rect x="230" y="266" width="60" height="48" rx="10" fill="#ffffff" stroke="#2d1b69" stroke-width="1.4"/>
+              <use href="#icon-automation" x="244" y="278" width="26" height="26" color="#2d1b69"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="steps reveal-group">
+        <div class="step reveal">
+          <div class="step__num">Strategy</div>
+          <h3>Understand the problem.</h3>
+          <p>Clarify the business goal before writing a line of code.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">Build</div>
+          <h3>Engineer the solution.</h3>
+          <p>Design and build with the right architecture for the job.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">Scale</div>
+          <h3>Optimize for growth.</h3>
+          <p>Prepare systems to handle increasing demand reliably.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">Evolve</div>
+          <h3>Continuously improve.</h3>
+          <p>Iterate as the business and technology landscape change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Solutions ============ -->
+  <section class="section section-alt" id="solutions">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Solutions</span>
+        <h2>Technology Solutions for Real Business Problems.</h2>
+        <p>A focused set of capabilities we apply to help organizations design, build and operate better technology.</p>
+      </div>
+
+      <div class="grid solutions__grid reveal-group">
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-code"/></svg></span>
+          <h3>Software Engineering</h3>
+          <p>Design and development of reliable, scalable applications and platforms.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-api"/></svg></span>
+          <h3>API &amp; System Integration</h3>
+          <p>Connect applications, platforms and services through secure, well-designed APIs.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-cloud"/></svg></span>
+          <h3>Cloud-Native Solutions</h3>
+          <p>Build modern applications using containers, Kubernetes, cloud infrastructure and modern deployment practices.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-layers"/></svg></span>
+          <h3>Digital Platforms</h3>
+          <p>Create scalable platforms that support digital products and customer experiences.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-automation"/></svg></span>
+          <h3>Automation</h3>
+          <p>Automate repetitive processes and improve operational efficiency.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon"><svg><use href="#icon-compass"/></svg></span>
+          <h3>Technology Consulting</h3>
+          <p>Help organizations make better technology and architecture decisions.</p>
+          <a href="#contact" class="card__link">Learn More <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Products ============ -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Products</span>
+        <h2>Products We Build and Operate.</h2>
+        <p>Beyond client solutions, Pieswitch designs, builds and operates its own digital products.</p>
+      </div>
+
+      <div class="grid products__grid reveal-group">
+        <article class="product-card product-card--flagship reveal">
+          <span class="product-card__badge">Featured Product</span>
+          <h3 class="product-card__name">Inrema</h3>
+          <p class="product-card__tagline">Business Management Simplified</p>
+          <p class="product-card__desc">A modern platform designed to help businesses manage their operations, finances and everyday workflows.</p>
+          <a href="#contact" class="card__link">Explore Product <svg><use href="#icon-arrow-right"/></svg></a>
+        </article>
+
+        <article class="product-card product-card--placeholder reveal" aria-disabled="true">
+          <span class="product-card__badge">Coming Soon</span>
+          <h3 class="product-card__name">Next Product</h3>
+          <p class="product-card__desc">A future Pieswitch product is currently in development. Details will be shared here when it's ready.</p>
+        </article>
+
+        <article class="product-card product-card--placeholder reveal" aria-disabled="true">
+          <span class="product-card__badge">Coming Soon</span>
+          <h3 class="product-card__name">Next Product</h3>
+          <p class="product-card__desc">A future Pieswitch product is currently in development. Details will be shared here when it's ready.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Technology ============ -->
+  <section class="section" id="technology">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Technology</span>
+        <h2>Built With Modern Technology.</h2>
+        <p>Categories of technology within the Pieswitch capability ecosystem — applied selectively based on what each project actually needs.</p>
+      </div>
+
+      <div class="grid tech__grid reveal-group">
+        <div class="tech-group reveal">
+          <div class="tech-group__head">
+            <span class="tech-group__icon"><svg><use href="#icon-server"/></svg></span>
+            <h3>Backend</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">Java</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">Kotlin</span>
+            <span class="pill">Node.js</span>
+          </div>
+        </div>
+        <div class="tech-group reveal">
+          <div class="tech-group__head">
+            <span class="tech-group__icon"><svg><use href="#icon-cloud"/></svg></span>
+            <h3>Cloud &amp; Infrastructure</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">AWS</span>
+            <span class="pill">Azure</span>
+            <span class="pill">Kubernetes</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Terraform</span>
+          </div>
+        </div>
+        <div class="tech-group reveal">
+          <div class="tech-group__head">
+            <span class="tech-group__icon"><svg><use href="#icon-database"/></svg></span>
+            <h3>Data &amp; Messaging</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Redis</span>
+            <span class="pill">Kafka</span>
+          </div>
+        </div>
+        <div class="tech-group reveal">
+          <div class="tech-group__head">
+            <span class="tech-group__icon"><svg><use href="#icon-browser"/></svg></span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">React</span>
+          </div>
+        </div>
+      </div>
+      <p class="tech__note">These represent the technology ecosystem Pieswitch draws from, not every technology is used on every project, and selection is guided by what best fits each solution.</p>
+    </div>
+  </section>
+
+  <!-- ============ Engineering Philosophy ============ -->
+  <section class="section philosophy">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Engineering Philosophy</span>
+        <h2>Engineering for What Comes Next.</h2>
+      </div>
+
+      <div class="grid philosophy__grid reveal-group">
+        <div class="principle reveal">
+          <span class="principle__icon"><svg><use href="#icon-scale"/></svg></span>
+          <h3>Scalability</h3>
+          <p>Systems designed to grow with the business.</p>
+        </div>
+        <div class="principle reveal">
+          <span class="principle__icon"><svg><use href="#icon-shield"/></svg></span>
+          <h3>Reliability</h3>
+          <p>Architecture focused on resilience and predictable performance.</p>
+        </div>
+        <div class="principle reveal">
+          <span class="principle__icon"><svg><use href="#icon-lock"/></svg></span>
+          <h3>Security</h3>
+          <p>Security considered throughout the development lifecycle.</p>
+        </div>
+        <div class="principle reveal">
+          <span class="principle__icon"><svg><use href="#icon-target"/></svg></span>
+          <h3>Simplicity</h3>
+          <p>Avoid unnecessary complexity and build maintainable systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Process ============ -->
+  <section class="section" id="processSection">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Process</span>
+        <h2>How We Work.</h2>
+      </div>
+
+      <div class="process__track" id="processTrack">
+        <div class="process__line"><div class="process__line-fill" id="processLineFill"></div></div>
+
+        <div class="process-step reveal">
+          <span class="process-step__dot"><svg><use href="#icon-search"/></svg></span>
+          <h3>Discover</h3>
+          <p>Understand the business challenge.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-step__dot"><svg><use href="#icon-pencil"/></svg></span>
+          <h3>Design</h3>
+          <p>Define the architecture and user experience.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-step__dot"><svg><use href="#icon-hammer"/></svg></span>
+          <h3>Build</h3>
+          <p>Develop, test and integrate the solution.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-step__dot"><svg><use href="#icon-rocket"/></svg></span>
+          <h3>Launch</h3>
+          <p>Deploy and validate in real-world environments.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-step__dot"><svg><use href="#icon-trending"/></svg></span>
+          <h3>Scale</h3>
+          <p>Monitor, optimize and continuously improve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Selected Work ============ -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Selected Work.</h2>
+        <p>Case studies are added as engagements are completed and cleared for publication. The cards below outline the categories we work in.</p>
+      </div>
+
+      <div class="grid work__grid reveal-group">
+        <article class="work-card reveal">
+          <span class="work-card__category">Digital Platforms</span>
+          <h3>Case Study Placeholder</h3>
+          <p>Project details will be published here once available.</p>
+          <div class="work-card__tags">
+            <span class="tag">Platform Engineering</span>
+            <span class="tag">API Design</span>
+          </div>
+          <div class="work-card__footer">
+            <span class="work-card__status">Coming Soon</span>
+            <span class="work-card__cta">View Case Study <svg><use href="#icon-arrow-right"/></svg></span>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <span class="work-card__category">Financial Technology</span>
+          <h3>Case Study Placeholder</h3>
+          <p>Project details will be published here once available.</p>
+          <div class="work-card__tags">
+            <span class="tag">Security</span>
+            <span class="tag">System Integration</span>
+          </div>
+          <div class="work-card__footer">
+            <span class="work-card__status">Coming Soon</span>
+            <span class="work-card__cta">View Case Study <svg><use href="#icon-arrow-right"/></svg></span>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <span class="work-card__category">Enterprise Integration</span>
+          <h3>Case Study Placeholder</h3>
+          <p>Project details will be published here once available.</p>
+          <div class="work-card__tags">
+            <span class="tag">APIs</span>
+            <span class="tag">Automation</span>
+          </div>
+          <div class="work-card__footer">
+            <span class="work-card__status">Coming Soon</span>
+            <span class="work-card__cta">View Case Study <svg><use href="#icon-arrow-right"/></svg></span>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <span class="work-card__category">Cloud Modernization</span>
+          <h3>Case Study Placeholder</h3>
+          <p>Project details will be published here once available.</p>
+          <div class="work-card__tags">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Cloud Infrastructure</span>
+          </div>
+          <div class="work-card__footer">
+            <span class="work-card__status">Coming Soon</span>
+            <span class="work-card__cta">View Case Study <svg><use href="#icon-arrow-right"/></svg></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Why Pieswitch ============ -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Why Pieswitch</span>
+        <h2>Why Organizations Work With Pieswitch.</h2>
+      </div>
+
+      <div class="grid why__grid reveal-group">
+        <div class="why-item reveal">
+          <span class="why-item__icon"><svg><use href="#icon-target"/></svg></span>
+          <div>
+            <h3>Business First</h3>
+            <p>Technology decisions should support measurable business objectives.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <span class="why-item__icon"><svg><use href="#icon-scale"/></svg></span>
+          <div>
+            <h3>Built to Scale</h3>
+            <p>Architecture should accommodate tomorrow's growth.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <span class="why-item__icon"><svg><use href="#icon-code"/></svg></span>
+          <div>
+            <h3>Modern Engineering</h3>
+            <p>Use contemporary engineering practices without unnecessary complexity.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <span class="why-item__icon"><svg><use href="#icon-layers"/></svg></span>
+          <div>
+            <h3>Long-Term Thinking</h3>
+            <p>Build systems that can evolve rather than becoming technical debt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="grid contact__grid">
+        <div class="contact__info reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Have a Technology Challenge?</h2>
+          <p>Let's discuss how Pieswitch can help turn your idea, challenge or opportunity into a scalable digital solution.</p>
+
+          <div class="contact__details">
+            <div class="contact__detail"><svg><use href="#icon-globe"/></svg> pieswitch.com</div>
+            <div class="contact__detail"><svg><use href="#icon-mail"/></svg> <a href="mailto:pieswitcher@gmail.com">pieswitcher@gmail.com</a></div>
+          </div>
+          <p class="contact__note">This is a placeholder contact address for demonstration purposes and is not actively monitored until configured by Pieswitch.</p>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="nameError">
+              <p class="field-error" id="nameError">Please enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="emailError">
+              <p class="field-error" id="emailError">Please enter a valid email address.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phoneError">
+              <p class="field-error" id="phoneError">Please enter a valid phone number.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-describedby="messageError"></textarea>
+            <p class="field-error" id="messageError">Please tell us a bit about your project.</p>
+          </div>
+          <button type="submit" class="btn btn-primary form__submit">Start a Conversation <svg><use href="#icon-arrow-right"/></svg></button>
+          <div class="form__status" id="formStatus" role="status" aria-live="polite">
+            <svg><use href="#icon-check"/></svg>
+            <span>Thanks — your message has been prepared. Since this site has no backend connected yet, no data was actually sent.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-mark"><svg><use href="#icon-switch"/></svg></span>
+          Pieswitch
+        </a>
+        <p>Building technology that moves businesses forward.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Pieswitch. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
